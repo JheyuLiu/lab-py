@@ -6,5 +6,5 @@ app.run(debug=True)
 
 @app.route('/')
 def hello_world():
-    return 'Hello, World!!!'
+    return 'Hello, my docker images! ' + os.getenv("HOSTNAME") + '.'
 
