@@ -6,7 +6,7 @@ frontend:
 
 backend:
   image: jheyuliu/backend
-  tag: 1447ac5
+  tag: latest
   autoscaling:
     averageUtilization: 60
 
