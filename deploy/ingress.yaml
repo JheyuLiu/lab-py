@@ -1,0 +1,22 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  creationTimestamp: "2023-05-07T14:51:47Z"
+  generation: 1
+  name: hello-world-ingress
+  namespace: lab-py
+  resourceVersion: "65660"
+  uid: ecbc270d-28cc-4483-b19e-d5c09747f231
+spec:
+  rules:
+  - http:
+      paths:
+      - backend:
+          service:
+            name: hello-world-flask-service
+            port:
+              number: 5000
+        path: /
+        pathType: Exact
+status:
+  loadBalancer: {}

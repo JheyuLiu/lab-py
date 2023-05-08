@@ -1,0 +1,19 @@
+apiVersion: autoscaling/v1
+kind: HorizontalPodAutoscaler
+metadata:
+  creationTimestamp: "2023-05-08T08:57:01Z"
+  name: hello-world-flask
+  namespace: lab-py
+  resourceVersion: "107086"
+  uid: 25a0aa61-67e3-4a9b-b323-6cf57273e864
+spec:
+  maxReplicas: 10
+  minReplicas: 2
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: hello-world-flask
+  targetCPUUtilizationPercentage: 50
+status:
+  currentReplicas: 0
+  desiredReplicas: 0
