@@ -1,12 +1,12 @@
 frontend:
   image: jheyuliu/frontend
-  tag: 1447ac5
+  tag: f8b8b97
   autoscaling:
     averageUtilization: 60
 
 backend:
   image: jheyuliu/backend
-  tag: latest
+  tag: f8b8b97
   autoscaling:
     averageUtilization: 60
 
